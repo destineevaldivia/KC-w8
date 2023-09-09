@@ -3,6 +3,7 @@ import App from './App';
 import { expect } from 'vitest';
 import Header from './components/header';
 import Item from './components/item';
+import Form from './components/form';
 
 //sanity check
 test("say hello to Destinee", () => {
@@ -39,9 +40,8 @@ test("say hello to Destinee", () => {
         });
     })
 //test #3
-//Test if the Form component works as expected or is rendered correctly.
-
-//test#4
-//Test any other functionality or edge case you think is necessary.
+    test("Test if the Form component works as expected or is rendered correctly", () => {
+        const { getByPlaceholderText, getByText } = render(<Form />);
+    })
 
 
